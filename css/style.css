@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 300px;
+    margin: 20px;
+}
+
+body {
+    background-color: white;
+    font-family: "Rajdhani", sans-serif;
+}
+
+.fondo {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+h1 {
+    color: rgb(243, 243, 100);
+    font-family: "Titan One", sans-serif;
+    font-weight: lighter;
+    text-transform: lowercase;
+    text-align: center;
+    font-size: 6rem;
+    margin-top: 15vh;
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: "Titan One", sans-serif;
+    font-weight: lighter;
+    text-transform: lowercase;
+    color: rgb(243, 243, 100);
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+main {
+    margin: 30vh;
+}
+
+.texto {
+    margin-left: 20;
+    line-height: 1.5;
+    font-family: "Caveat", system-ui;
+    font-size: x-large;
+    font-weight: bold;
+    color: rgb(74, 151, 67);
+}
+
+.img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.destacados {
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: 50vh;
+}
+
+li {
+    margin: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+a {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px;
+    border: rgb(86, 148, 86) 2px solid;
+    padding: 10px;
+    background-color: rgb(86, 148, 86);
+}
+
+.h1-paginas {
+    margin-top: 0;
+    margin-bottom: 10vh;
+}
+
+.ul-paginas {
+    margin-bottom: 10vh;
+}
+
+.main-paginas {
+    margin: 0;
+}
+
+#banner-promocion {
+    width: 80vw;
+    height: 50vh;
+}
+
+.icons {
+    width: 40px;
+
+}
+
+footer {
+    margin: 5vh;
+}
+
+.ul-footer {
+    margin: 0;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.subtitulo-oferta {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: bold;
+    margin: 5vh;
+    font-size: 4rem;
+}
+
+.subtitulo {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: bold;
+    font-size: 4rem;
+    margin: 5vh;
+    color: rgb(243, 243, 100);
+    text-align: left;
+}
+
+.texto-pags {
+    margin: 20px;
+    line-height: 1.5;
+    margin-bottom: 5vh;
+    font-family: "Caveat", system-ui;
+    font-size: x-large;
+    color: rgb(74, 151, 67);
+    font-weight: bold;
+}
+
+.texto-form {
+    margin-left: 4vh;
+    margin-bottom: 4vh;
+    font-family: "Caveat", system-ui;
+    font-size: x-large;
+    font-weight: bold;
+    color: rgb(74, 151, 67);
+}
+
+label {
+    margin-left: 2vh;
+    color: rgb(74, 151, 67);
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 3vh;
+}
+
+#enviar {
+    margin-left: 13vh;
+    margin-bottom: 5vh;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border: rgb(86, 148, 86) 2px solid;
+    padding: 10px;
+    background-color: rgb(86, 148, 86);
+    color: white;
+    font-family: "Kosugi Maru", sans-serif;
+}
+
+#mensaje-form {
+    margin-left: 2vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+footer{
+    margin-left: 5vh;
+}
+
+h4 {
+    font-size: 1.2rem;
+    margin: 20px;
+}
+
+.texto-footer {
+    font-size: 1.2rem;
+}
+
+#logo-footer {
+    text-align: right;
+}
+
