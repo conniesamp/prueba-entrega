@@ -58,6 +58,8 @@ main {
     font-size: x-large;
     font-weight: bold;
     color: rgb(74, 151, 67);
+    text-justify: inter-word;
+    text-align: justify;
 }
 
 .img {
@@ -75,7 +77,6 @@ main {
 
 ul {
     list-style-type: none;
-    text-align: center;
     margin-bottom: 50vh;
 }
 
@@ -152,6 +153,8 @@ footer {
     font-size: x-large;
     color: rgb(74, 151, 67);
     font-weight: bold;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .texto-form {
@@ -161,6 +164,7 @@ footer {
     font-size: x-large;
     font-weight: bold;
     color: rgb(74, 151, 67);
+    text-align: center;
 }
 
 label {
@@ -226,7 +230,7 @@ h4 {
     grid-template-areas: 
       "logo nav-header"; 
     margin-top: 20px;
-    justify-items: start;
+    justify-items: center;
 }
 
 .nav-header { 
@@ -265,5 +269,8 @@ h4 {
 .form { grid-area: form; }
   
 .map { grid-area: map; }
-  
-  
+
+.navbar__home, .nav__paginas {
+    display: flex;
+    justify-content: center;
+}
