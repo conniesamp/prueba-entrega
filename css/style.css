@@ -1,9 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .logo {
+    grid-area: logo;
     width: 300px;
     margin: 20px;
 }
@@ -66,7 +68,9 @@ main {
 }
 
 .destacados {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 ul {
@@ -93,7 +97,7 @@ a {
 
 .h1-paginas {
     margin-top: 0;
-    margin-bottom: 10vh;
+    margin-bottom: 7vh;
 }
 
 .ul-paginas {
@@ -194,6 +198,7 @@ footer{
 h4 {
     font-size: 1.2rem;
     margin: 20px;
+    text-align: center;
 }
 
 .texto-footer {
@@ -202,5 +207,63 @@ h4 {
 
 #logo-footer {
     text-align: right;
+    grid-area: logo-footer;
 }
 
+.img-promocion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+}
+
+.container-header {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 0.45fr 1.5fr; 
+    grid-template-rows: 0.5fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "logo nav-header"; 
+    margin-top: 20px;
+    justify-items: start;
+}
+
+.nav-header { 
+    grid-area: nav-header; 
+    margin-top: 90px;
+}
+
+.container-footer {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "payment contact logo-footer";
+    justify-items: center;
+}
+  
+.payment { grid-area: payment; }
+  
+.contact { grid-area: contact; }
+  
+.container__contacto {  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "form map";
+    justify-items: center;
+}
+  
+.form { grid-area: form; }
+  
+.map { grid-area: map; }
+  
+  
