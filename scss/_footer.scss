@@ -1,0 +1,57 @@
+.container-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "payment contact logo-footer";
+    justify-items: center;
+    @include tablet {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "payment contact"
+        "logo-footer logo-footer";
+    }
+    @include mobile {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "payment"
+        "contact"
+        "logo-footer";
+    }
+    .payment {
+        grid-area: payment;
+        h4 {
+            @extend %h4;
+        }
+        .texto-footer {
+            @extend %shared-texto-footer;
+            .icons {
+                @extend %shared-icons;
+            }
+        }
+    }
+    .contact {
+        grid-area: contact;
+        h4 {
+            @extend %h4;
+        }
+        .texto-footer {
+            @extend %shared-texto-footer;
+            .icons {
+                @extend %shared-icons;
+            }
+        }
+    }
+    #logo-footer {
+        text-align: right;
+        grid-area: logo-footer;
+        .logo {
+            @extend %shared-logo;
+        }
+    }
+}

@@ -1,0 +1,74 @@
+.main-paginas {
+    @extend %shared-main-paginas;
+    .subtitulo {
+        @extend %shared-subtitulo;
+    }
+    .container__contacto {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: 
+        "form map";
+        justify-items: center;
+        @include tablet {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+            "form"
+            "map";
+        }
+        .form {
+            grid-area: form;
+            .texto-form {
+                @extend %shared-texto-form;
+            }
+            form {
+                div {
+                    label {
+                        @extend label;
+                    }
+                    #nombre-form {
+                        @extend input;
+                    }
+                }
+                input#enviar {
+                    @extend input;
+                    @extend %shared-enviar;
+                }
+            }
+            form {
+                .texto-form {
+                    @extend %shared-texto-form;
+                }
+                div {
+                    label {
+                        @extend label;
+                    }
+                }
+                div {
+                    #mensaje-form {
+                        margin-left: 2vh;
+                        margin-top: 3vh;
+                        margin-bottom: 3vh;
+                    }
+                }
+                input#enviar {
+                    @extend input;
+                    @extend %shared-enviar;
+                }
+            }
+        }
+        .map {
+            grid-area: map;
+            .img {
+                @extend %shared-img;
+            }
+            .texto-form {
+                @extend %shared-texto-form;
+            }
+        }
+    }
+}

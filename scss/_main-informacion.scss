@@ -1,0 +1,9 @@
+.main-paginas {
+    @extend %shared-main-paginas;
+    .subtitulo {
+        @extend %shared-subtitulo;
+    }
+    .texto-pags {
+        @extend %shared-texto-pags;
+    }
+}

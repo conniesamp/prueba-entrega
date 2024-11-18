@@ -1,0 +1,49 @@
+header {
+    .logo__home {
+        .logo {
+            @extend %shared-logo;
+        }
+    }
+    .fondo {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+
+        @include portatil {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: fixed;
+        }
+    }
+    h1 {
+        @extend %h1;
+    }
+    h2 {
+        @extend %h2;
+    }
+    .navbar__home {
+        display: flex;
+        justify-content: center;
+        nav {
+            ul {
+                @extend %ul;
+                @include tablet {
+                    display: block !important;
+                }
+                li {
+                    @extend %shared-li;
+                    a {
+                        @extend %shared-a;
+                    }
+                }
+            }
+        }
+    }
+}

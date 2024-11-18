@@ -1,0 +1,15 @@
+.main-paginas {
+    @extend %shared-main-paginas;
+    .subtitulo-oferta {
+        @extend %shared-subtitulo-oferta;
+    }
+    .texto-pags {
+        @extend %shared-texto-pags;
+    }
+    .img-promocion {
+        @extend %shared-img-promocion;
+        .img {
+            @extend %shared-img;
+        }
+    }
+}

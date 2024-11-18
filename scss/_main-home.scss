@@ -1,0 +1,35 @@
+main {
+    @extend %main;
+    @include tablet {
+        margin: 6vh !important;
+        padding: 10px !important;
+    }
+    h2 {
+        @extend %h2;
+    }
+    .texto {
+        margin-left: 20;
+        line-height: 1.5;
+        font-family: "Caveat", system-ui;
+        font-size: x-large;
+        font-weight: bold;
+        color: $texto;
+        text-justify: inter-word;
+        text-align: justify;
+        @include tablet {
+            font-size: 35px !important;
+        }
+    }
+    .destacados {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        img {
+            @extend %shared-img;
+            flex: 1 1 300px;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

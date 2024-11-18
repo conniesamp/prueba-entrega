@@ -1,0 +1,190 @@
+@import "queries";
+
+$subtitulos: #f3f364;
+$botones: #569456;
+$texto: #4a9743;
+
+%h1 {
+    color: $subtitulos;
+    font-family: "Titan One", sans-serif;
+    font-weight: lighter;
+    text-transform: lowercase;
+    text-align: center;
+    font-size: 6rem;
+    margin-top: 15vh;
+    @include portatil {
+        font-size: 4rem;
+    }
+    @include tablet {
+        font-size: 3rem;
+    }
+    @include mobile {
+        font-size: 2rem;
+    }
+}
+
+%h2 {
+    font-size: 3rem;
+    font-family: "Titan One", sans-serif;
+    font-weight: lighter;
+    text-transform: lowercase;
+    color: $subtitulos;
+    text-align: center;
+    margin-bottom: 10vh;
+    @include mobile {
+        font-size: 1.8rem;
+    }
+}
+
+%h4 {
+    font-size: 1.2rem;
+    margin: 20px;
+    text-align: center;
+}
+
+%main {
+    margin: 30vh;
+}
+
+%shared-main-paginas {
+    margin: 0;
+}
+
+%ul {
+    list-style-type: none;
+    margin-bottom: 20vh;
+    display: flex;
+}
+
+%shared-li {
+    margin: 10px;
+    text-transform: uppercase;
+    @include tablet {
+        padding: 10px;
+    }
+}
+
+%shared-a {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px;
+    border: $botones 2px solid;
+    padding: 10px;
+    background-color: $botones;
+    @include tablet {
+        font-size: 1rem;
+    }
+}
+
+footer {
+    margin: 5vh;
+    margin-left: 5vh;
+}
+
+label {
+    margin-left: 2vh;
+    color: $texto;
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 3vh;
+}
+
+%shared-img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    margin: 15px;
+    @include mobile {
+        width: 80%;
+        height: auto;
+        border-radius: 10px;
+        margin: 15px;
+    }
+}
+
+%shared-img-promocion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+}
+
+%shared-texto-pags {
+    margin: 20px;
+    line-height: 1.5;
+    margin-bottom: 5vh;
+    font-family: "Caveat", system-ui;
+    font-size: 30px;
+    color: $texto;
+    font-weight: bold;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+%shared-subtitulo {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: bold;
+    font-size: 4rem;
+    margin: 5vh;
+    color: $subtitulos;
+    text-align: left;
+    @include mobile {
+        font-size: 3rem;
+    }
+}
+
+%shared-subtitulo-oferta {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: bold;
+    margin: 5vh;
+    font-size: 4rem;
+    @include mobile {
+        font-size: 3rem !important;
+    }
+}
+
+%shared-texto-footer {
+    font-size: 1.2rem;
+}
+
+%shared-icons {
+    width: 40px;
+}
+
+%shared-logo {
+    grid-area: logo;
+    width: 300px;
+    margin: 20px;
+        @include tablet {
+            margin-bottom: 0;
+            width: 250px;
+        }
+        @include mobile {
+            width: 200px;
+        }
+}
+
+%shared-texto-form {
+    margin-left: 4vh;
+    margin-bottom: 4vh;
+    font-family: "Caveat", system-ui;
+    font-size: x-large;
+    font-weight: bold;
+    color: $texto;
+    text-align: center;
+}
+
+%shared-enviar {
+    margin-bottom: 5vh !important;
+    margin-left: 13vh;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border: $botones 2px solid;
+    padding: 10px;
+    background-color: $botones;
+    color: white;
+    font-family: "Kosugi Maru", sans-serif;
+}

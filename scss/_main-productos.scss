@@ -1,0 +1,26 @@
+.main-paginas {
+    @extend %shared-main-paginas;
+    .subtitulo-oferta {
+        @extend %shared-subtitulo-oferta;
+    }
+    .img-promocion {
+        @extend %shared-img-promocion;
+        #banner-promocion {
+            width: 80vw;
+            height: 50vh;
+            @include tablet {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+    .img-promocion {
+        @extend %shared-img-promocion;
+        .img {
+            @extend %shared-img;
+        }
+    }
+    .subtitulo {
+        @extend %shared-subtitulo;
+    }
+}
