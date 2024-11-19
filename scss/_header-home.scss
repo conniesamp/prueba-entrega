@@ -22,10 +22,10 @@ header {
             position: fixed;
         }
     }
-    h1 {
-        @extend %h1;
+    .animate__fadeInDownBig {
+        @extend %shared-h1;
     }
-    h2 {
+    .animate__fadeInUpBig {
         @extend %h2;
     }
     .navbar__home {

@@ -25,6 +25,7 @@ header {
             grid-area: nav-header;
             margin-top: 90px;
             .h1-paginas {
+                @extend %shared-h1;
                 margin-top: 0;
                 margin-bottom: 7vh;
                 @include portatil {

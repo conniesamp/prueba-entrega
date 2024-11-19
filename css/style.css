@@ -9,7 +9,7 @@ body {
   font-family: "Rajdhani", sans-serif;
 }
 
-header h1 {
+header .container-header .nav-header .h1-paginas, header .animate__fadeInDownBig {
   color: #f3f364;
   font-family: "Titan One", sans-serif;
   font-weight: lighter;
@@ -19,22 +19,22 @@ header h1 {
   margin-top: 15vh;
 }
 @media screen and (max-width: 1140px) {
-  header h1 {
+  header .container-header .nav-header .h1-paginas, header .animate__fadeInDownBig {
     font-size: 4rem;
   }
 }
 @media screen and (max-width: 902px) {
-  header h1 {
+  header .container-header .nav-header .h1-paginas, header .animate__fadeInDownBig {
     font-size: 3rem;
   }
 }
 @media screen and (max-width: 720px) {
-  header h1 {
+  header .container-header .nav-header .h1-paginas, header .animate__fadeInDownBig {
     font-size: 2rem;
   }
 }
 
-main h2, header h2 {
+main h2, header .animate__fadeInUpBig {
   font-size: 3rem;
   font-family: "Titan One", sans-serif;
   font-weight: lighter;
@@ -44,7 +44,7 @@ main h2, header h2 {
   margin-bottom: 10vh;
 }
 @media screen and (max-width: 720px) {
-  main h2, header h2 {
+  main h2, header .animate__fadeInUpBig {
     font-size: 1.8rem;
   }
 }
@@ -314,6 +314,7 @@ header .container-header .nav-header .nav__paginas .ul-paginas {
 }
 main .texto {
   margin-left: 20;
+  padding: 10px;
   line-height: 1.5;
   font-family: "Caveat", system-ui;
   font-size: x-large;
