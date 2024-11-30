@@ -100,7 +100,7 @@ footer {
 }
 
 label, .main-paginas .container__contacto .form form div label {
-  margin-left: 2vh;
+  margin-left: 1vh;
   color: #4a9743;
   font-weight: bold;
 }
@@ -295,6 +295,7 @@ header .container-header .nav-header .nav__paginas {
 }
 header .container-header .nav-header .nav__paginas .ul-paginas {
   margin-bottom: 10vh;
+  list-style-type: none;
   display: flex;
 }
 @media screen and (max-width: 902px) {
@@ -321,11 +322,11 @@ main .texto {
   font-weight: bold;
   color: #4a9743;
   text-justify: inter-word;
-  text-align: justify;
 }
 @media screen and (max-width: 902px) {
   main .texto {
     font-size: 35px !important;
+    -webkit-text-stroke: 0.5px white;
   }
 }
 main .destacados {
@@ -371,7 +372,7 @@ main .destacados img {
   grid-area: form;
 }
 .main-paginas .container__contacto .form form div #mensaje-form {
-  margin-left: 2vh;
+  margin-left: 1vh;
   margin-top: 3vh;
   margin-bottom: 3vh;
 }

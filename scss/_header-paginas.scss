@@ -49,6 +49,7 @@ header {
                 }
                 .ul-paginas {
                     margin-bottom: 10vh;
+                    list-style-type: none;
                     display: flex;
                     @include tablet {
                         display: flex;

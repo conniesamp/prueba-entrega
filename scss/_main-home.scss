@@ -16,9 +16,9 @@ main {
         font-weight: bold;
         color: $texto;
         text-justify: inter-word;
-        text-align: justify;
         @include tablet {
             font-size: 35px !important;
+            -webkit-text-stroke: 0.5px white;
         }
     }
     .destacados {
