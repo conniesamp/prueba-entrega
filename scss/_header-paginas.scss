@@ -7,7 +7,6 @@ header {
         gap: 0px 0px; 
         grid-template-areas: 
         "logo nav-header";
-        margin-top: 20px;
         justify-items: center;
 
         @include portatil {
@@ -36,7 +35,7 @@ header {
                     font-size: 50px !important;
                 }
             }
-            .nav__paginas {
+            #nav__paginas {
                 display: flex;
                 justify-content: center;
 
@@ -47,7 +46,7 @@ header {
                     margin: 0;
                     padding: 0;
                 }
-                .ul-paginas {
+                #ul-paginas {
                     margin-bottom: 10vh;
                     list-style-type: none;
                     display: flex;

@@ -1,5 +1,5 @@
 @mixin portatil {
-    @media screen and (max-width:1140px) {
+    @media screen and (max-width:1265px) {
         @content;
     }
 }

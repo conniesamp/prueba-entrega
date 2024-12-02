@@ -32,15 +32,17 @@ header {
         display: flex;
         justify-content: center;
         nav {
-            ul {
-                @extend %ul;
-                @include tablet {
-                    display: block !important;
-                }
-                li {
-                    @extend %shared-li;
-                    a {
-                        @extend %shared-a;
+            #navbarNav {
+                ul {
+                    @extend %ul;
+                    @include tablet {
+                        display: block !important;
+                    }
+                    li {
+                        @extend %shared-li;
+                        a {
+                            @extend %shared-a;
+                        }
                     }
                 }
             }

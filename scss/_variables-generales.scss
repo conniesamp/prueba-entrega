@@ -47,7 +47,7 @@ $texto: #4a9743;
 }
 
 %shared-main-paginas {
-    margin: 0;
+    margin: 60px;
 }
 
 %ul {
@@ -77,11 +77,6 @@ $texto: #4a9743;
     }
 }
 
-footer {
-    margin: 5vh;
-    margin-left: 5vh;
-}
-
 label {
     margin-left: 1vh;
     color: $texto;
@@ -89,7 +84,7 @@ label {
 }
 
 input {
-    margin-bottom: 3vh;
+    margin-bottom: 3vh !important;
 }
 
 %shared-img {
